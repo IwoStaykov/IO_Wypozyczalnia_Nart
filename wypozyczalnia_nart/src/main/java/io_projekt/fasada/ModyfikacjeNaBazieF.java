@@ -1,12 +1,12 @@
 public class ModyfikacjeNaBazieF {
 
 	public static void UsuniecieKontaKlienta() {
-		// TODO - implement ModyfikacjeNaBazieF.UsuniecieKontaKlienta
+		System.out.println("Usuwanie konta klienta...");
 		throw new UnsupportedOperationException();
 	}
 
 	public static void UsuniecieKontaPracownika() {
-		// TODO - implement ModyfikacjeNaBazieF.UsuniecieKontaPracownika
+		System.out.println("Usuwanie konta pracownika...");
 		throw new UnsupportedOperationException();
 	}
 
