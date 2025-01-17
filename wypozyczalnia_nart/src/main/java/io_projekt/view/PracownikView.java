@@ -1,15 +1,25 @@
 package io_projekt.view;
 
+import java.util.Scanner;
+
+import io_projekt.interface.MenuViewInterface;
+
 public class PracownikView implements MenuViewInterface {
+    private final Scanner scanner;
 
-	public PracownikView() {
-		// TODO - implement PracownikView.PracownikView
-		throw new UnsupportedOperationException();
-	}
+    public PracownikView() {
+        scanner = new Scanner(System.in);
+    }
 
-	public boolean wyswietl() {
-		// TODO - implement PracownikView.wyswietl
-		throw new UnsupportedOperationException();
-	}
+    public void wyswietl() {
+        System.out.println("Menu:");
+        System.out.println("1. Utworzenie nowego zlecenia");
+        System.out.println("5. Wyjście");
+        System.out.print("Wybierz operację: ");
+    }
+
+    public int wyborOperacja() {
+        return scanner.nextInt();
+    }
 
 }

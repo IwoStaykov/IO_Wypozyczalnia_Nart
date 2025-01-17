@@ -8,8 +8,11 @@ public class SprzetSportowyF {
 	}
 
 	public static void ModyfikujDaneSprzetu() {
-		// TODO - implement SprzetSportowyF.ModyfikujDaneSprzetu
+		System.out.println("Modyfikacja stanu jednostki sprzętu...");
 		throw new UnsupportedOperationException();
 	}
 
+	public void potwierdzenie(){
+		System.out.println("Stan jednostki sprzętu został zmodyfikowany");
+	}
 }

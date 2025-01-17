@@ -1,7 +1,7 @@
 // KierownikViewMenu.java
 import java.util.Scanner;
 
-public class KierownikView {
+public class KierownikView implements MenuViewInterface {
 	private final Scanner scanner;
 
 	public KierownikView() {

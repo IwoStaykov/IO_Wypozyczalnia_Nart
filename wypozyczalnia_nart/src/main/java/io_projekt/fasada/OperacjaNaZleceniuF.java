@@ -8,13 +8,17 @@ public class OperacjaNaZleceniuF {
 	}
 
 	public static void DodajZlecenie() {
-		// TODO - implement OperacjaNaZleceniuF.DodajZlecenie
+		System.out.println("Dodaj zlecenie");
 		throw new UnsupportedOperationException();
 	}
 
 	public static void ModyfikujZlecenie() {
 		// TODO - implement OperacjaNaZleceniuF.ModyfikujZlecenie
 		throw new UnsupportedOperationException();
+	}
+
+	public void potwierdzenie(){
+		System.out.println("Zlecenie zostało dodane");
 	}
 
 }
