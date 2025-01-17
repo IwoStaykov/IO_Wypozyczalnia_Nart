@@ -1,3 +1,5 @@
+package io_projekt.view;
+
 public class ZlecenieWypozyczeniaView implements ZlecenieWypozyczeniaViewInterface {
 
 	public string wyswietlZlecenie() {

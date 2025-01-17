@@ -1,3 +1,5 @@
+package io_projekt.view;
+
 public class PracownikView implements MenuViewInterface {
 
 	public PracownikView() {

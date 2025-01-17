@@ -1,3 +1,5 @@
+package io_projekt.fasada;
+
 public class OperacjaNaZleceniuF {
 
 	public static void PrzegladajZlecenie() {

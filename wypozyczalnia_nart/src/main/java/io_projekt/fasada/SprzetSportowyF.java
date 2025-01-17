@@ -1,3 +1,5 @@
+package io_projekt.fasada;
+
 public class SprzetSportowyF {
 
 	public static void SprawdzDostepnosc() {

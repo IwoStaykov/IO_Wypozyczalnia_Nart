@@ -1,3 +1,5 @@
+package io_projekt.view;
+
 public class SprzetSportowyView implements SprzetSportowyViewInterface {
 
 	public string wyswietlSzczegolySprzetu() {

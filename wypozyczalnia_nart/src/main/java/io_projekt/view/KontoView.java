@@ -1,3 +1,5 @@
+package io_projekt.view;
+
 public class KontoView implements KontoViewInterface {
 
 	public string wyswietlKonto() {

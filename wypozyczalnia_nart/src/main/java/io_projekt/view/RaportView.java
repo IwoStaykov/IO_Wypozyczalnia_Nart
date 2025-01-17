@@ -1,3 +1,5 @@
+package io_projekt.view;
+
 public class RaportView implements RaportViewInterface {
 
 	public string wyswietlRaportWypozyczen() {
