@@ -1,186 +1,113 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Konto implements KontoInterface {
 
-	private int KontoID;
-	private string Imie;
-	private string Nazwisko;
-	private string Email;
-	private string NumerTelefonu;
-	private string Login;
-	private string Haslo;
-	private RolaKonta Rola;
-	private static KontoInterface Konta;
+    private int KontoID;
+    private String Imie;
+    private String Nazwisko;
+    private String Email;
+    private String NumerTelefonu;
+    private String Login;
+    private String Haslo;
+    private RolaKonta Rola;
+    private static List<Konto> Konta = new ArrayList<>();
 
-	/**
-	 * 
-	 * @param KontoID
-	 * @param Imie
-	 * @param Nazwisko
-	 * @param Email
-	 * @param NumerTelefonu
-	 * @param Login
-	 * @param Haslo
-	 * @param Rola
-	 */
-	public void KontoID(int KontoID, string Imie, string Nazwisko, string Email, string NumerTelefonu, string Login, string Haslo, RolaKonta Rola) {
-		// TODO - implement Konto.KontoID
-		throw new UnsupportedOperationException();
-	}
+    public Konto(int KontoID, String Imie, String Nazwisko, String Email, String NumerTelefonu, String Login, String Haslo, RolaKonta Rola) {
+        this.KontoID = KontoID;
+        this.Imie = Imie;
+        this.Nazwisko = Nazwisko;
+        this.Email = Email;
+        this.NumerTelefonu = NumerTelefonu;
+        this.Login = Login;
+        this.Haslo = Haslo;
+        this.Rola = Rola;
+    }
 
-	public int GetKontoID() {
-		// TODO - implement Konto.GetKontoID
-		throw new UnsupportedOperationException();
-	}
+    public int GetKontoID() {
+        return KontoID;
+    }
 
-	public string GetImie() {
-		// TODO - implement Konto.GetImie
-		throw new UnsupportedOperationException();
-	}
+    public String GetImie() {
+        return Imie;
+    }
 
-	public void SetImie() {
-		// TODO - implement Konto.SetImie
-		throw new UnsupportedOperationException();
-	}
+    public void SetImie(String Imie) {
+        this.Imie = Imie;
+    }
 
-	public string GetNazwisko() {
-		// TODO - implement Konto.GetNazwisko
-		throw new UnsupportedOperationException();
-	}
+    public String GetNazwisko() {
+        return Nazwisko;
+    }
 
-	/**
-	 * 
-	 * @param Nazwisko
-	 */
-	public void SetNazwisko(string Nazwisko) {
-		// TODO - implement Konto.SetNazwisko
-		throw new UnsupportedOperationException();
-	}
+    public void SetNazwisko(String Nazwisko) {
+        this.Nazwisko = Nazwisko;
+    }
 
-	public string GetEmail() {
-		// TODO - implement Konto.GetEmail
-		throw new UnsupportedOperationException();
-	}
+    public String GetEmail() {
+        return Email;
+    }
 
-	/**
-	 * 
-	 * @param Email
-	 */
-	public void SetEmail(string Email) {
-		// TODO - implement Konto.SetEmail
-		throw new UnsupportedOperationException();
-	}
+    public void SetEmail(String Email) {
+        this.Email = Email;
+    }
 
-	public string GetNumerTelefonu() {
-		// TODO - implement Konto.GetNumerTelefonu
-		throw new UnsupportedOperationException();
-	}
+    public String GetNumerTelefonu() {
+        return NumerTelefonu;
+    }
 
-	/**
-	 * 
-	 * @param NumerTelefonu
-	 */
-	public void SetNumerTelefonu(string NumerTelefonu) {
-		// TODO - implement Konto.SetNumerTelefonu
-		throw new UnsupportedOperationException();
-	}
+    public void SetNumerTelefonu(String NumerTelefonu) {
+        this.NumerTelefonu = NumerTelefonu;
+    }
 
-	public string GetLogin() {
-		// TODO - implement Konto.GetLogin
-		throw new UnsupportedOperationException();
-	}
+    public String GetLogin() {
+        return Login;
+    }
 
-	/**
-	 * 
-	 * @param Login
-	 */
-	public void SetLogin(string Login) {
-		// TODO - implement Konto.SetLogin
-		throw new UnsupportedOperationException();
-	}
+    public void SetLogin(String Login) {
+        this.Login = Login;
+    }
 
-	public string GetHaslo() {
-		// TODO - implement Konto.GetHaslo
-		throw new UnsupportedOperationException();
-	}
+    public String GetHaslo() {
+        return Haslo;
+    }
 
-	/**
-	 * 
-	 * @param Haslo
-	 */
-	public void SetHaslo(string Haslo) {
-		// TODO - implement Konto.SetHaslo
-		throw new UnsupportedOperationException();
-	}
+    public void SetHaslo(String Haslo) {
+        this.Haslo = Haslo;
+    }
 
-	public RolaKonta getRola() {
-		// TODO - implement Konto.getRola
-		throw new UnsupportedOperationException();
-	}
+    public RolaKonta GetRola() {
+        return Rola;
+    }
 
-	/**
-	 * 
-	 * @param Rola
-	 */
-	public void SetRola(RolaKonta Rola) {
-		// TODO - implement Konto.SetRola
-		throw new UnsupportedOperationException();
-	}
+    public void SetRola(RolaKonta Rola) {
+        this.Rola = Rola;
+    }
 
-	/**
-	 * 
-	 * @param KontoID
-	 * @param Imie
-	 * @param Nazwisko
-	 * @param Email
-	 * @param NumerTelefonu
-	 * @param Login
-	 * @param Haslo
-	 * @param Rola
-	 */
-	public static void DodajKonto(int KontoID, string Imie, string Nazwisko, string Email, string NumerTelefonu, string Login, string Haslo, RolaKonta Rola) {
-		// TODO - implement Konto.DodajKonto
-		throw new UnsupportedOperationException();
-	}
+    public static void DodajKonto(int KontoID, String Imie, String Nazwisko, String Email, String NumerTelefonu, String Login, String Haslo, RolaKonta Rola) {
+        Konto konto = new Konto(KontoID, Imie, Nazwisko, Email, NumerTelefonu, Login, Haslo, Rola);
+        Konta.add(konto);
+    }
 
-	/**
-	 * 
-	 * @param KontoID
-	 * @param Imie
-	 * @param Nazwisko
-	 * @param Email
-	 * @param NumerTelefonu
-	 * @param Login
-	 * @param Haslo
-	 */
-	public void ModyfikujKonto(int KontoID, string Imie, string Nazwisko, string Email, string NumerTelefonu, string Login, string Haslo) {
-		// TODO - implement Konto.ModyfikujKonto
-		throw new UnsupportedOperationException();
-	}
+    public void ModyfikujKonto(int KontoID, String Imie, String Nazwisko, String Email, String NumerTelefonu, String Login, String Haslo) {
+        this.KontoID = KontoID;
+        this.Imie = Imie;
+        this.Nazwisko = Nazwisko;
+        this.Email = Email;
+        this.NumerTelefonu = NumerTelefonu;
+        this.Login = Login;
+        this.Haslo = Haslo;
+    }
 
-	/**
-	 * 
-	 * @param KontoID
-	 */
-	public static void UsunKontoKlienta(int KontoID) {
-		// TODO - implement Konto.UsunKontoKlienta
-		throw new UnsupportedOperationException();
-	}
+    public static void UsunKontoKlienta(int KontoID) {
+        Konta.removeIf(konto -> konto.GetKontoID() == KontoID && konto.GetRola() == RolaKonta.KLIENT);
+    }
 
-	/**
-	 * 
-	 * @param KontoID
-	 */
-	public static void UsunKontoPracownika(int KontoID) {
-		// TODO - implement Konto.UsunKontoPracownika
-		throw new UnsupportedOperationException();
-	}
+    public static void UsunKontoPracownika(int KontoID) {
+        Konta.removeIf(konto -> konto.GetKontoID() == KontoID && konto.GetRola() == RolaKonta.PRACOWNIK);
+    }
 
-	/**
-	 * 
-	 * @param KontoID
-	 */
-	public static KontoInterface GetKontoByID(int KontoID) {
-		// TODO - implement Konto.GetKontoByID
-		throw new UnsupportedOperationException();
-	}
-
+    public static Konto GetKontoByID(int KontoID) {
+        return Konta.stream().filter(konto -> konto.GetKontoID() == KontoID).findFirst().orElse(null);
+    }
 }

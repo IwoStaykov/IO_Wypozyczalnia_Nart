@@ -1,5 +1,9 @@
+import io_projekt.view.KierownikView;
+import io_projekt.fasada.OperacjaNaBazieF;
+import io_projekt.fasada.ModyfikacjaNaBazieF;
+
 public class KierownikS {
-	private KierownikViewMenu viewMenu;
+	private KierownikView viewMenu;
 	private OperacjaNaBazieF operacja;
 	private ModyfikacjaNaBazieF modyfikacja;
 
@@ -10,19 +14,19 @@ public class KierownikS {
 	}
 
 	public void uruchomMain() {
-		int wybranaOperacja;
+		int WybranaOperacja;
 		do {
 			viewMenu.wyswietl();
-			wybranaOperacja = viewMenu.wyborOperacji();
-			switch (wybranaOperacja) {
-				case 1 -> operacja.wyswietlenieBazy();
-				case 2 -> operacja.dodanieNowegoKonta();
-				case 3 -> modyfikacja.usuniecieKontaKlienta();
-				case 4 -> modyfikacja.usuniecieKontaPracownika();
+			WybranaOperacja = viewMenu.wyborOperacji();
+			switch (WybranaOperacja) {
+				case 1 -> operacja.WyswietlenieBazy();
+				case 2 -> operacja.DodanieNowegoKonta();
+				case 3 -> modyfikacja.UsuniecieKontaKlienta();
+				case 4 -> modyfikacja.UsuniecieKontaPracownika();
 				case 5 -> System.out.println("Zamykam menu...");
 				default -> System.out.println("Nieprawidłowa opcja, spróbuj ponownie.");
 			}
-		} while (wybranaOperacja != 5);
+		} while (WybranaOperacja != 5);
 	}
 
 	public static void main(String[] args) {

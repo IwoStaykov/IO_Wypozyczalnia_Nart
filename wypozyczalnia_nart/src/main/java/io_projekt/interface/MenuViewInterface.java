@@ -1,5 +1,5 @@
 public interface MenuViewInterface {
 
-	void wyswietl();
+	void start();
 
 }

@@ -1,23 +1,24 @@
+import io_projekt.interface.MenuViewInterface;
+
 public class Presenter {
 
-	private static MenuS menu;
+	private static MenuViewInterface start;
 
 	public static void main() {
-		// TODO - implement Presenter.main
+		System.out.println("Witaj w wypożyczalni nart!");
 		throw new UnsupportedOperationException();
 	}
-
 	/**
 	 * 
 	 * @param menu
 	 */
 	public static void SetMenu(MenuS menu) {
-		// TODO - implement Presenter.SetMenu
+		System.out.println("Ustawiam menu...");
 		throw new UnsupportedOperationException();
 	}
 
 	public static void UzycieMenu() {
-		// TODO - implement Presenter.UzycieMenu
+		System.out.println("Użycie menu...");
 		throw new UnsupportedOperationException();
 	}
 

@@ -1,13 +1,17 @@
 public class ModyfikacjeNaBazieF {
 
 	public static void UsuniecieKontaKlienta() {
-		System.out.println("Usuwanie konta klienta...");
-		throw new UnsupportedOperationException();
+		int idToDelete;
+		System.out.println("Podaj ID konta do usunięcia: ");
+		System.in.read(idToDelete);
+		System.out.println("Usuwanie konta klienta o ID " + String.valueOf(idToDelete));
 	}
 
 	public static void UsuniecieKontaPracownika() {
-		System.out.println("Usuwanie konta pracownika...");
-		throw new UnsupportedOperationException();
+		int idToDelete;
+		System.out.println("Podaj ID konta do usunięcia: ");
+		System.in.read(idToDelete);
+		System.out.println("Usuwanie konta pracownika o ID " + String.valueOf(idToDelete));
 	}
 
 }
